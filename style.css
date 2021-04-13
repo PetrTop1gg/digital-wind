@@ -1,0 +1,293 @@
+:root {
+    --MainWidth: calc(100vw-16px);
+    --BorderRadius: 3%; 
+}
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url(Pacifico-Regular.ttf)
+}
+body {
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Pacifico', cursive;
+    width: var(--MainWidth);    
+}
+header {
+    width:  var(--MainWidth);
+    height: 85vh;
+    background: linear-gradient(to right,#d5bd87,#6b351b);
+    display:flex;
+    flex-direction: row;
+    overflow:hidden;
+}
+.png img {
+    width: 35vw;
+}
+.png {    
+    margin: auto;
+    transform: translateX(700px);
+    width: fit-content;
+    opacity: 1;
+    transition: 1s;
+    border: 0px dashed red
+}
+.txt {
+    width: 35vw;
+    margin: auto;
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-700px);
+    opacity: 1;
+    color: #031f98;
+    color: darkblue;
+    font-family: 'Pacifico', cursive;
+    transition: 1s;
+}
+.RiverJordan {
+    width: var(--MainWidth);
+    height: fit-content;
+    padding: 10vh 7vw;
+    background-image: url(fon.jpg);
+    background-size: cover;
+}
+.RiverJordan figcaption {
+    text-align:justify;
+    width: fit-content;
+    border: 0px solid black;
+}
+.RiverJordan main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 0px solid black;
+}
+.RiverJordan img {
+    width: 14vw;
+    width: 200px;
+}
+.RiverJordan figure {
+    padding: 2vw;
+    margin: 2vh;
+    flex-basis: 200px;
+    font-size: 20px;
+    border: 0.5vw solid black;
+    border-radius: 7.5%;
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+.BadLep{
+    transform: translateX(-100px);
+    transition: all 1s
+}
+.riv{
+    transform: translateX(100px);
+    transition: all 1s
+}
+.Petra {
+    width: var(--MainWidth);
+    height: fit-content;
+    margin:0;
+    background-image: url(petra.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+}
+.Petra figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 2vw;
+    margin: 2vh 12vw;
+    font-size: 1.5vw;
+    border: 0.5vw solid black;
+    border-radius: 7.5%;
+    transform: translateX(-200px);
+    transition: all 1s
+
+}
+.Petra figure img {
+    width: 180px;
+    height:auto;
+}
+.Petra figure figcaption {
+    width: 50vw;
+}
+.VadiRam {
+    width: var(--MainWidth);
+    height: 60vh;
+    background-color: #ffd9a5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    padding: 5vh 0;
+    padding-bottom: 10vh;
+    font-size: 3vw;    
+}
+.VadiRam h1 {
+    font-size: 5vh
+}
+.VadiRam div {
+    width: 80vw;
+    height: 24vh;
+    font-size: 1.5vw;
+    margin: 2vh auto;
+    padding: 10px;
+    border: 0vw solid blueviolet;
+    border-radius: var(--BorderRadius);
+    background-color: #f1b785;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+ 
+
+}
+.VadiRam img {
+    width: 40vh;
+    border-radius: 50%;
+    position: absolute;
+    align-self:center ;
+    top: 22.5vh;
+    transform: rotate(0);
+    transition: all 1s; 
+    /*left: 30vw;*/
+}
+.first_block {
+    align-items: center;
+   
+}
+.second_block {
+    align-items: center;
+}
+.VadiRam span {
+    width: 29%
+}
+.diving {
+    var(--MainWidth);
+    padding: 5vh 0;
+    height: fit-content;
+    background: linear-gradient(#7b9f85, #a6a680);
+
+}
+.diving h1 {
+    font-size: 5vh;
+    margin-top:0;
+    text-align: center;
+    
+}
+.diving p {
+    width: 35vw;
+    font-size: 1.5vw;
+}
+.diving img {
+    width: 20vw;
+    margin: 1vh 1vw;
+    border-radius: 7.5%;
+
+
+}
+.diving main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.diving .photos {
+    display:flex;
+    width: 45vw;
+    height:fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 0px solid black;
+}
+.diving .diving1 {
+    transform: translateY(-200px);
+    transition: transform 1s
+}
+.diving .diving2 {
+    transform: translateY(200px);
+    transition: transform 1s
+}
+
+footer {
+    width: var(--MainWidth);;
+    height: fit-content;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e09870;
+    flex-basis: 40vw;
+}
+footer img {
+    width: 30vw
+}
+footer p {
+    text-align: center;
+}
+footer hr {
+    width: 40vw;
+    color: black;
+    height: 0.3vh;
+    background-color:#6b351b;
+}
+@media (max-width: 721px) {
+    header {
+        flex-direction: column;
+        height: 100vh;
+        background: linear-gradient(to bottom,#d5bd87,#6b351b);
+    }          
+    .txt {
+        width: 90vw;
+        padding: 5vw;
+        text-align: center;
+    }
+    .txt p {
+        text-align: justify;
+    }
+    .png img {
+         width: 90vw;
+         padding: 5vw;
+    }
+    .Petra figure {
+    font-size: 3vw;
+    }
+    .VadiRam div {
+    font-size: 2.5vw; 
+    width: 80vw;
+    height: 20vh;   
+    }
+    .VadiRam img {
+    width: 20vh;
+    top: 30vh;
+    }
+    .VadiRam h1 {
+        font-size: 3vh
+    }
+    .VadiRam {
+        height: 60vh;
+    }
+    .diving h1 {
+        font-size: 3vh;
+    }
+    .diving p {
+        width: 35vw;
+        font-size: 3vw;
+    }
+    .diving img {
+        width: 40vw;
+        margin: 1vh 1vw;
+        border-radius: 7.5%;    
+    }
+}

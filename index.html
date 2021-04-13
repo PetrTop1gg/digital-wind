@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие по Иордании</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+        function parallaks(){
+            document.querySelector(".txt").style.transform="translateX(0px)"
+            document.querySelector(".png").style.transform="translateX(0px)"
+        }
+        function anim2(){
+            document.querySelectorAll(".BadLep")[0].style.transform="translateX(0px)"
+            document.querySelectorAll(".BadLep")[1].style.transform="translateX(0px)"
+            document.querySelectorAll(".riv")[0].style.transform="translateX(0px)"
+            document.querySelectorAll(".riv")[1].style.transform="translateX(0px)"
+
+            if (document.querySelector(".Petra figure").getBoundingClientRect().top<500) {
+            document.querySelectorAll(".Petra figure")[0].style.transform="translateX(0px)"
+            document.querySelectorAll(".Petra figure")[1].style.transform="translateX(0px)"
+            document.querySelectorAll(".Petra figure")[2].style.transform="translateX(0px)"
+            document.querySelectorAll(".Petra figure")[3].style.transform="translateX(0px)"
+            }
+            if (document.querySelector(".VadiRam img").getBoundingClientRect().top<500) {
+                document.querySelector(".VadiRam img").style.transform="rotate(720deg)"
+            }
+           if (document.querySelector(".diving .photos").getBoundingClientRect().top<500) {
+                document.querySelectorAll(".diving1")[0].style.transform="translateY(0px)"
+                document.querySelectorAll(".diving1")[1].style.transform="translateY(0px)"
+                document.querySelectorAll(".diving2")[0].style.transform="translateY(0px)"
+                document.querySelectorAll(".diving2")[1].style.transform="translateY(0px)"
+
+            }
+
+            
+        }
+    </script>
+</head>
+<body onload="parallaks()" onscroll="anim2()">
+    <!--
+    <nav>
+      <ul>
+          <li>Путешествие по Иордании
+          <li>Река Иордан
+          <li>Второе чудо света: Пе́тра
+          <li>Пустыня Вади-Рам
+          <li>Дайвинг в Красном море    
+      </ul>
+    </nav>
+-->
+    <header>
+        <div class="txt">
+        <h1>Путешествие по Иордании</h1>
+        <p>Страна Иордания - это монархия. Король Иордании Абдалла и его предшественник король Хуссейн, 
+           многое сделали для развития Иордании. построили развитую систему дорог, открыли школы в каждом 
+           маленьком поселке и многое др. Иордания стала одной из самых стабильных и безопасных монархий 
+           Ближнего Востока.
+        </p>
+        </div>
+        <div class="png">
+            <img src="p7qglbfJeh0.jpg">
+        </div>
+    </header>
+    <section class="RiverJordan">
+       <h1 style="text-align: center; font-size: 5vh">Река Иордан</h1>
+       <main>
+       <figure class="BadLep">
+           <img src="wH3csv8T5vs.jpg">
+           <figcaption>
+            В этом месте мы притормозили, чтобы купить теплых бедуинских лепешек. 
+            Лепешки продавец доставал из печи, которая закопана вот здесь под навесом
+           </figcaption>
+        </figure> 
+       <figure class="BadLep">
+         <img src="A5S5FjUrvjA.jpg">
+         <figcaption>
+           Река Иордан во время своей истории меняла свое русло, на этом фото можно представить это.
+         </figcaption>
+       </figure>
+       <figure class="riv">
+         <img src="IMG_20200222_143406.jpg">
+         <figcaption>
+          Это моя бабушка
+         </figcaption>
+    </figure>
+    <figure class="riv">
+        <img src="IMG_20200222_142559.jpg">
+        <figcaption>
+         Граница Иордании и Израиля
+        </figcaption>
+    </figure>
+           </main>
+    </section>
+    <section class="Petra">
+        <h1 style="text-align: center; font-size: 5vh">Второе чудо света: Пе&#x301;тра</h1>
+        <figure class="town">
+           <img src="1-U9p6kfENT7U.jpg">
+           <figcaption>В песчаниковых скалах множество пещер. Но главное, что бросается в глаза, — это выдолбленные в скалах склепы.</figcaption>
+        </figure>
+        <figure class="town">
+            <img src="Image20210319155735.jpg">
+            <figcaption>
+                Узкий каньон Сик длинной в 1 км. За ним нам открылся Эль-Хазне — величественное здание с фасадом, высеченным из огромной скалы. 
+                Набатеи были язычники. В скалах они вырубали склепы для своих умерших и делали ступы для джинов. 
+            </figcaption>
+        </figure>    
+    <figure class="town">
+        <img src="Image20210319155126.jpg">
+        <figcaption>Мавзолей Эль-Хазне — пример величайшего мастерства древних архитекторов и камнерезов. Каменотёсы начинали с самого верха, 
+            вырубая первую ступень, а затем спускались все ниже и ниже. Так вот - одно дело размечать будущую постройку и вырубать её, стоя на 
+            строительных лесах, и совсем другое — это, повиснув над пропастью.</figcaption>
+    </figure>
+    <figure class="town">
+        <img src="Image20210319155429.jpg">
+        <figcaption>
+            С помощью терракотовых труб архитекторы Петры создали сложную систему водоснабжения и, несмотря на засушливый климат, 
+            жители города никогда не нуждались в воде. По всему городу было расположено около 200 резервуаров, собиравших и хранивших дождевую воду. 
+            Помимо связи резервуаров, терракотовые трубы собирали воду изо всех источников в радиусе 25 километров.
+        </figcaption>
+    </figure>
+    </section>
+    <section class="VadiRam">
+        <h1 style="text-align: center;">Пустыня Вади-Рам</h1>
+         <img src="IMG_20200221_165340.jpg">
+        <div class="first_block">
+           <span style="margin-right: 5vw;">
+            Каменистая пустыня Вади Рам, она же Лунная долина, находится на юге Иордании. Это очень живописное место. 
+           </span>
+           <span style="text-align:right; margin-left: 27vw;">
+            Красно-оранжевые марсианские пейзажи привлекли многих режиссёров к съемкам фильмов
+            «Трансформер», «Красная планета», «Марсианин».
+        </span>           
+        </div>
+        <div class="second_block">
+            <span style="margin-right: 5vw;">
+                И мне приходилось задерживаться, чтобы сделать несколько фото невероятно красивой горы.
+            </span>
+            <span style="text-align:right; margin-left: 5vw; padding-left: 19vw">
+                В этой пустыне проходили и исторические события. В 1916-1918 гг. здесь восставшие 
+                арабы воевали против турок
+            </span>
+        </div>
+    </section>
+    <section class="diving">
+        <h1>Дайвинг в Красном море</h1>
+        <main>
+        <p>
+            Во время проведенное в Иордании, мы решили совершить погружение в заливе Акаба. 
+            Наше 1-ое погружения проводилось с берега, так как наш дайвинг клуб расположен на 
+            мелководье. Погрузились на 10 и 15 метров и рассматривали красоты коралловых 
+            рифов Красного моря. Погружение с берега по наклону позволило в спокойном режиме 
+            погрузится до нужной глубины даже моей бабушке. Другой раз погружались с катера к 
+            затонувшим на 15-ти и 6-ти метровой глубине к самолету и танку. Видимость была 
+            прекрасная до 50-ти метров, температура воды была около 20 градусов.
+        </p>
+        <div class="photos">            
+           <img src="photo5397792822213587579.jpg" class="diving1">
+           <img src="photo5397792822213587581.jpg" class="diving1">
+           <img src="photo5397792822213587583.jpg" class="diving2">
+           <img src="photo5397792822213587588.jpg" class="diving2">
+        </div>
+        </main>
+    </section>
+    <footer>
+        <p>Сделано Коваленко Петром </p>
+        <p>Под руководством бабушки Марины Петровны</p>
+        <p>Мос. обл., г. Химки, мкр. Планерная, МГОУ СОШ № 19</p>
+        <hr width="500">
+        <p>Сделано специально для открытого Международного конкурса компьютерных работ для детей, юношества и студенческой молодежи «Цифровой ветер - 2021»</p>
+        <hr>
+        <p><img src="ru_logo_21.png"></p>
+    </footer>
+</body>
+</html>
